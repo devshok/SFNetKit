@@ -27,6 +27,7 @@ public struct NetKit {
         let configuration = RequestConfigurationImpl(host: host, path: path, method: method)
         let request = RequestBuilder.shared.build(with: configuration)
         return client.get(T.self, using: request)
+            .eraseToAnyPublisher()
     }
     
     // MARK: - Helpers

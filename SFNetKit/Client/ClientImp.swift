@@ -26,7 +26,6 @@ final class ClientImpl: Client {
         }
         return configuration.session.dataTaskPublisher(for: request)
             .retry(configuration.attemptsPerRequest)
-            .receive(on: DispatchQueue.main)
             .mapError { urlError -> NetworkError in
                 return ErrorMapper.shared.map(urlError: urlError)
             }
@@ -35,6 +34,7 @@ final class ClientImpl: Client {
             .mapError { decodingError in
                 return ErrorMapper.shared.map(decodingError: decodingError)
             }
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
 }
