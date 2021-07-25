@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD1CCDD426AA0C9E00553C93 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CCDD326AA0C9E00553C93 /* NetworkError.swift */; };
+		DD1CCDD626AA106D00553C93 /* CombineObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CCDD526AA106D00553C93 /* CombineObject.swift */; };
+		DD1CCDDA26AAF14100553C93 /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CCDD926AAF14100553C93 /* ErrorMapper.swift */; };
+		DD6D9BF826ACEFB80004F562 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D9BF726ACEFB80004F562 /* Scheme.swift */; };
+		DD6D9BFE26ACF0F60004F562 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D9BFD26ACF0F60004F562 /* Path.swift */; };
+		DD6D9C0326ACF4F50004F562 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D9C0226ACF4F50004F562 /* Bundle+Extension.swift */; };
+		DD6D9C0526ACFA710004F562 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D9C0426ACFA710004F562 /* RequestBuilder.swift */; };
+		DD6D9C0926ACFB140004F562 /* RequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D9C0826ACFB140004F562 /* RequestConfiguration.swift */; };
+		DD6D9C0B26ACFB580004F562 /* RequestConfigurationImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D9C0A26ACFB580004F562 /* RequestConfigurationImpl.swift */; };
+		DD6D9C0D26ACFDB10004F562 /* NetKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D9C0C26ACFDB10004F562 /* NetKit.swift */; };
+		DDB2761026AA04AF0017D416 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB2760F26AA04AF0017D416 /* Method.swift */; };
+		DDB2761226AA05AF0017D416 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB2761126AA05AF0017D416 /* Client.swift */; };
+		DDB2761426AA05C00017D416 /* ClientImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB2761326AA05C00017D416 /* ClientImp.swift */; };
+		DDB2761926AA09C90017D416 /* ClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB2761826AA09C90017D416 /* ClientConfiguration.swift */; };
+		DDB2761B26AA09CD0017D416 /* ClientConfigurationImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB2761A26AA09CD0017D416 /* ClientConfigurationImpl.swift */; };
 		DDC0173226AA01A70048A949 /* SFNetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC0172826AA01A70048A949 /* SFNetKit.framework */; };
 		DDC0173726AA01A70048A949 /* SFNetKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC0173626AA01A70048A949 /* SFNetKitTests.swift */; };
 		DDC0173926AA01A70048A949 /* SFNetKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DDC0172B26AA01A70048A949 /* SFNetKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +38,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD1CCDD326AA0C9E00553C93 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DD1CCDD526AA106D00553C93 /* CombineObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineObject.swift; sourceTree = "<group>"; };
+		DD1CCDD926AAF14100553C93 /* ErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMapper.swift; sourceTree = "<group>"; };
+		DD6D9BF726ACEFB80004F562 /* Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheme.swift; sourceTree = "<group>"; };
+		DD6D9BFD26ACF0F60004F562 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		DD6D9BFF26ACF2000004F562 /* Network.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Network.xcconfig; sourceTree = "<group>"; };
+		DD6D9C0226ACF4F50004F562 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		DD6D9C0426ACFA710004F562 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		DD6D9C0826ACFB140004F562 /* RequestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfiguration.swift; sourceTree = "<group>"; };
+		DD6D9C0A26ACFB580004F562 /* RequestConfigurationImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfigurationImpl.swift; sourceTree = "<group>"; };
+		DD6D9C0C26ACFDB10004F562 /* NetKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetKit.swift; sourceTree = "<group>"; };
+		DDB2760F26AA04AF0017D416 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		DDB2761126AA05AF0017D416 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		DDB2761326AA05C00017D416 /* ClientImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientImp.swift; sourceTree = "<group>"; };
+		DDB2761826AA09C90017D416 /* ClientConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientConfiguration.swift; sourceTree = "<group>"; };
+		DDB2761A26AA09CD0017D416 /* ClientConfigurationImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientConfigurationImpl.swift; sourceTree = "<group>"; };
 		DDC0172826AA01A70048A949 /* SFNetKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFNetKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC0172B26AA01A70048A949 /* SFNetKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNetKit.h; sourceTree = "<group>"; };
 		DDC0172C26AA01A70048A949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +81,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD6D9BFB26ACF0960004F562 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DD6D9BF726ACEFB80004F562 /* Scheme.swift */,
+				DDB2760F26AA04AF0017D416 /* Method.swift */,
+				DD6D9BFD26ACF0F60004F562 /* Path.swift */,
+				DD6D9C0426ACFA710004F562 /* RequestBuilder.swift */,
+				DD6D9C0826ACFB140004F562 /* RequestConfiguration.swift */,
+				DD6D9C0A26ACFB580004F562 /* RequestConfigurationImpl.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DD6D9BFC26ACF0C00004F562 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				DD1CCDD326AA0C9E00553C93 /* NetworkError.swift */,
+				DD1CCDD926AAF14100553C93 /* ErrorMapper.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		DD6D9C0626ACFAD10004F562 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				DDB2761126AA05AF0017D416 /* Client.swift */,
+				DDB2761326AA05C00017D416 /* ClientImp.swift */,
+				DDB2761826AA09C90017D416 /* ClientConfiguration.swift */,
+				DDB2761A26AA09CD0017D416 /* ClientConfigurationImpl.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		DD6D9C0726ACFAE00004F562 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD6D9C0226ACF4F50004F562 /* Bundle+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DDC0171E26AA01A70048A949 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +145,13 @@
 			children = (
 				DDC0172B26AA01A70048A949 /* SFNetKit.h */,
 				DDC0172C26AA01A70048A949 /* Info.plist */,
+				DD6D9BFF26ACF2000004F562 /* Network.xcconfig */,
+				DD6D9C0C26ACFDB10004F562 /* NetKit.swift */,
+				DD6D9C0726ACFAE00004F562 /* Extensions */,
+				DD6D9BFC26ACF0C00004F562 /* Error */,
+				DD6D9BFB26ACF0960004F562 /* Request */,
+				DD6D9C0626ACFAD10004F562 /* Client */,
+				DD1CCDD526AA106D00553C93 /* CombineObject.swift */,
 			);
 			path = SFNetKit;
 			sourceTree = "<group>";
@@ -144,9 +223,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "Ivan Shokurov";
 				TargetAttributes = {
 					DDC0172726AA01A70048A949 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					DDC0173026AA01A70048A949 = {
 						CreatedOnToolsVersion = 12.5;
@@ -194,6 +275,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6D9C0B26ACFB580004F562 /* RequestConfigurationImpl.swift in Sources */,
+				DD6D9BF826ACEFB80004F562 /* Scheme.swift in Sources */,
+				DDB2761226AA05AF0017D416 /* Client.swift in Sources */,
+				DD1CCDDA26AAF14100553C93 /* ErrorMapper.swift in Sources */,
+				DD6D9C0526ACFA710004F562 /* RequestBuilder.swift in Sources */,
+				DD6D9C0D26ACFDB10004F562 /* NetKit.swift in Sources */,
+				DD6D9C0326ACF4F50004F562 /* Bundle+Extension.swift in Sources */,
+				DDB2761026AA04AF0017D416 /* Method.swift in Sources */,
+				DD6D9C0926ACFB140004F562 /* RequestConfiguration.swift in Sources */,
+				DDB2761B26AA09CD0017D416 /* ClientConfigurationImpl.swift in Sources */,
+				DD1CCDD426AA0C9E00553C93 /* NetworkError.swift in Sources */,
+				DDB2761426AA05C00017D416 /* ClientImp.swift in Sources */,
+				DDB2761926AA09C90017D416 /* ClientConfiguration.swift in Sources */,
+				DD6D9BFE26ACF0F60004F562 /* Path.swift in Sources */,
+				DD1CCDD626AA106D00553C93 /* CombineObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +436,9 @@
 		};
 		DDC0173D26AA01A70048A949 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD6D9BFF26ACF2000004F562 /* Network.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QSL98J665M;
@@ -357,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.shokuroff.SFNetKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,7 +463,9 @@
 		};
 		DDC0173E26AA01A70048A949 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD6D9BFF26ACF2000004F562 /* Network.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QSL98J665M;
@@ -389,6 +490,7 @@
 		DDC0174026AA01A70048A949 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QSL98J665M;
 				INFOPLIST_FILE = SFNetKitTests/Info.plist;
@@ -407,6 +509,7 @@
 		DDC0174126AA01A70048A949 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QSL98J665M;
 				INFOPLIST_FILE = SFNetKitTests/Info.plist;
