@@ -14,7 +14,11 @@ public enum Path {
     
     private var basePath: String {
         do {
-            return try Bundle.main.getValue(for: .basePath)
+            guard let bundle = frameworkBundle else {
+                debugPrint(self, #function, #line, Bundle.ConfigError.missingBundle.rawValue)
+                return String()
+            }
+            return try bundle.getValue(for: .basePath)
         } catch let error as Bundle.ConfigError {
             debugPrint(self, #function, #line, error.rawValue)
             return String()
@@ -26,7 +30,11 @@ public enum Path {
     
     private var baseWord: String {
         do {
-            return try Bundle.main.getValue(for: .baseWord)
+            guard let bundle = frameworkBundle else {
+                debugPrint(self, #function, #line, Bundle.ConfigError.missingBundle.rawValue)
+                return String()
+            }
+            return try bundle.getValue(for: .baseWord)
         } catch let error as Bundle.ConfigError {
             debugPrint(self, #function, #line, error.rawValue)
             return String()
@@ -39,6 +47,11 @@ public enum Path {
     // MARK: - Helpers
     
     private func apiPath(by strings: [String]) -> String {
-        return strings.joined(separator: "/")
+        return "/" + strings.joined(separator: "/")
+    }
+    
+    private var frameworkBundle: Bundle? {
+        let identifier = "io.shokuroff.SFNetKit"
+        return .init(identifier: identifier)
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DD1CCDD426AA0C9E00553C93 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CCDD326AA0C9E00553C93 /* NetworkError.swift */; };
-		DD1CCDD626AA106D00553C93 /* CombineObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CCDD526AA106D00553C93 /* CombineObject.swift */; };
 		DD1CCDDA26AAF14100553C93 /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CCDD926AAF14100553C93 /* ErrorMapper.swift */; };
 		DD6D9BF826ACEFB80004F562 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D9BF726ACEFB80004F562 /* Scheme.swift */; };
 		DD6D9BFE26ACF0F60004F562 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D9BFD26ACF0F60004F562 /* Path.swift */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		DD1CCDD326AA0C9E00553C93 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		DD1CCDD526AA106D00553C93 /* CombineObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineObject.swift; sourceTree = "<group>"; };
 		DD1CCDD926AAF14100553C93 /* ErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMapper.swift; sourceTree = "<group>"; };
 		DD6D9BF726ACEFB80004F562 /* Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheme.swift; sourceTree = "<group>"; };
 		DD6D9BFD26ACF0F60004F562 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 				DD6D9BFC26ACF0C00004F562 /* Error */,
 				DD6D9BFB26ACF0960004F562 /* Request */,
 				DD6D9C0626ACFAD10004F562 /* Client */,
-				DD1CCDD526AA106D00553C93 /* CombineObject.swift */,
 			);
 			path = SFNetKit;
 			sourceTree = "<group>";
@@ -289,7 +286,6 @@
 				DDB2761426AA05C00017D416 /* ClientImp.swift in Sources */,
 				DDB2761926AA09C90017D416 /* ClientConfiguration.swift in Sources */,
 				DD6D9BFE26ACF0F60004F562 /* Path.swift in Sources */,
-				DD1CCDD626AA106D00553C93 /* CombineObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

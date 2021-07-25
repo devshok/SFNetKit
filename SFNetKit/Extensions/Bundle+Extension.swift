@@ -7,6 +7,7 @@ extension Bundle {
     enum ConfigError: String, Error {
         case missingKey
         case invalidValue
+        case missingBundle
     }
     
     // MARK: - Access Keys

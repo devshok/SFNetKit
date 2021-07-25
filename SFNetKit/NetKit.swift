@@ -34,7 +34,7 @@ public struct NetKit {
     
     private var host: String {
         do {
-            return try Bundle.main.getValue(for: .baseURL)
+            return try frameworkBundle.getValue(for: .baseURL)
         } catch let configError as Bundle.ConfigError {
             debugPrint(self, #function, #line, configError.rawValue)
             return String()
@@ -42,5 +42,9 @@ public struct NetKit {
             debugPrint(self, #function, #line, error.localizedDescription)
             return String()
         }
+    }
+    
+    private var frameworkBundle: Bundle {
+        Bundle.init(identifier: "io.shokuroff.SFNetKit") ?? .main
     }
 }

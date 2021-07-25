@@ -1,10 +1,3 @@
-//
-//  SFNetKit.h
-//  SFNetKit
-//
-//  Created by Ivan Shokurov (G1) on 23.07.2021.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for SFNetKit.
