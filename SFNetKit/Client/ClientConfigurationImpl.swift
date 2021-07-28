@@ -1,16 +1,16 @@
 import Foundation
 
-struct ClientConfigurationImpl: ClientConfiguration {
+public struct ClientConfigurationImpl: ClientConfiguration {
     
     // MARK: - Properties
     
-    let session: URLSession
-    let attemptsPerRequest: Int
-    let jsonDecoder: JSONDecoder
+    public let session: URLSession
+    public let attemptsPerRequest: Int
+    public let jsonDecoder: JSONDecoder
     
     // MARK: - Initialization
     
-    init(session: URLSession,
+    public init(session: URLSession,
          attemptsPerRequest: Int = 1,
          jsonDecoder: JSONDecoder = .init()
     ) {

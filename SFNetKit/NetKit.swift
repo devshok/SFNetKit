@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-public struct NetKit {
+public final class NetKit: ObservableObject {
     
     // MARK: - Client
     
