@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-public final class NetKit: ObservableObject {
+public final class NetKit {
     
     // MARK: - Client
     
@@ -11,6 +11,10 @@ public final class NetKit: ObservableObject {
     
     public init(configuration: ClientConfiguration) {
         self.client = ClientImpl(configuration: configuration)
+    }
+    
+    public static var `default`: Self {
+        return .init(configuration: defaultConfiguration)
     }
     
     // MARK: - Request
@@ -47,4 +51,43 @@ public final class NetKit: ObservableObject {
     private var frameworkBundle: Bundle {
         Bundle.init(identifier: "io.shokuroff.SFNetKit") ?? .main
     }
+    
+    private static let defaultConfiguration: ClientConfiguration = {
+        return ClientConfigurationImpl(
+            session: defaultSession,
+            attemptsPerRequest: 3
+        )
+    }()
+    
+    private static let defaultSession: URLSession = {
+        let s = URLSession(
+            configuration: defaultSessionConfiguration,
+            delegate: nil,
+            delegateQueue: defaultSessionQueue
+        )
+        return s
+    }()
+    
+    private static let defaultSessionConfiguration: URLSessionConfiguration = {
+        let c = URLSessionConfiguration.default
+        c.networkServiceType = .responsiveData
+        c.timeoutIntervalForRequest = 15
+        c.timeoutIntervalForResource = 15
+        c.urlCache = {
+            let cache = URLCache()
+            cache.memoryCapacity = 3_000_000 // 3 megabytes.
+            cache.diskCapacity = 40_000_000 // 40 megabytes.
+            return cache
+        }()
+        c.waitsForConnectivity = false
+        return c
+    }()
+    
+    private static var defaultSessionQueue: OperationQueue = {
+        let q = OperationQueue()
+        q.qualityOfService = .userInitiated
+        q.maxConcurrentOperationCount = 2
+        q.name = "queue.netKit.Snorrify.io.github.shokuroff"
+        return q
+    }()
 }
