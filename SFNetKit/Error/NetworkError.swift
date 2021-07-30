@@ -12,6 +12,7 @@ public enum NetworkError: Error, Equatable {
     case notFound
     case badResponse
     case other(localizedDescription: String)
+    case noSearchResults
     
     private var identifier: Int {
         switch self {
@@ -37,6 +38,8 @@ public enum NetworkError: Error, Equatable {
             return 10
         case .other:
             return 11
+        case .noSearchResults:
+            return 12
         }
     }
     

@@ -24,6 +24,8 @@
 		DDC0173226AA01A70048A949 /* SFNetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC0172826AA01A70048A949 /* SFNetKit.framework */; };
 		DDC0173726AA01A70048A949 /* SFNetKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC0173626AA01A70048A949 /* SFNetKitTests.swift */; };
 		DDC0173926AA01A70048A949 /* SFNetKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DDC0172B26AA01A70048A949 /* SFNetKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDC50E5726B3DB3D00CA316B /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC50E5626B3DB3D00CA316B /* Dictionary+Extension.swift */; };
+		DDC50E5926B3E3FF00CA316B /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC50E5826B3E3FF00CA316B /* EmptyResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		DDC0173126AA01A70048A949 /* SFNetKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFNetKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC0173626AA01A70048A949 /* SFNetKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFNetKitTests.swift; sourceTree = "<group>"; };
 		DDC0173826AA01A70048A949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC50E5626B3DB3D00CA316B /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		DDC50E5826B3E3FF00CA316B /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		DDC0171E26AA01A70048A949 = {
 			isa = PBXGroup;
 			children = (
+				DDC50E5626B3DB3D00CA316B /* Dictionary+Extension.swift */,
 				DDC0172A26AA01A70048A949 /* SFNetKit */,
 				DDC0173526AA01A70048A949 /* SFNetKitTests */,
 				DDC0172926AA01A70048A949 /* Products */,
@@ -145,6 +150,7 @@
 				DDC0172C26AA01A70048A949 /* Info.plist */,
 				DD6D9BFF26ACF2000004F562 /* Network.xcconfig */,
 				DD6D9C0C26ACFDB10004F562 /* NetKit.swift */,
+				DDC50E5A26B3E40400CA316B /* Responses */,
 				DD6D9C0726ACFAE00004F562 /* Extensions */,
 				DD6D9BFC26ACF0C00004F562 /* Error */,
 				DD6D9BFB26ACF0960004F562 /* Request */,
@@ -160,6 +166,14 @@
 				DDC0173826AA01A70048A949 /* Info.plist */,
 			);
 			path = SFNetKitTests;
+			sourceTree = "<group>";
+		};
+		DDC50E5A26B3E40400CA316B /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				DDC50E5826B3E3FF00CA316B /* EmptyResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,8 +298,10 @@
 				DDB2761B26AA09CD0017D416 /* ClientConfigurationImpl.swift in Sources */,
 				DD1CCDD426AA0C9E00553C93 /* NetworkError.swift in Sources */,
 				DDB2761426AA05C00017D416 /* ClientImp.swift in Sources */,
+				DDC50E5926B3E3FF00CA316B /* EmptyResponse.swift in Sources */,
 				DDB2761926AA09C90017D416 /* ClientConfiguration.swift in Sources */,
 				DD6D9BFE26ACF0F60004F562 /* Path.swift in Sources */,
+				DDC50E5726B3DB3D00CA316B /* Dictionary+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
