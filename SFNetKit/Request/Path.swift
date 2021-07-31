@@ -2,10 +2,11 @@ import Foundation
 
 public enum Path {
     case word(String)
+    case wordId(String)
     
     var string: String {
         switch self {
-        case .word(let value):
+        case .word(let value), .wordId(let value):
             return apiPath(by: [basePath, baseWord, value])
         }
     }
