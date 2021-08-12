@@ -13,9 +13,12 @@ public enum NetworkError: Error, Equatable {
     case badResponse
     case other(localizedDescription: String)
     case noSearchResults
+    case none
     
     private var identifier: Int {
         switch self {
+        case .none:
+            return 0
         case .unknown:
             return 1
         case .cancelledRequest:
