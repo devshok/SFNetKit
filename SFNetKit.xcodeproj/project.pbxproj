@@ -119,6 +119,7 @@
 		DD6D9C0726ACFAE00004F562 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DDC50E5626B3DB3D00CA316B /* Dictionary+Extension.swift */,
 				DD6D9C0226ACF4F50004F562 /* Bundle+Extension.swift */,
 			);
 			path = Extensions;
@@ -127,7 +128,6 @@
 		DDC0171E26AA01A70048A949 = {
 			isa = PBXGroup;
 			children = (
-				DDC50E5626B3DB3D00CA316B /* Dictionary+Extension.swift */,
 				DDC0172A26AA01A70048A949 /* SFNetKit */,
 				DDC0173526AA01A70048A949 /* SFNetKitTests */,
 				DDC0172926AA01A70048A949 /* Products */,
