@@ -6,6 +6,7 @@ final class ClientImpl: Client {
     // MARK: - Configuration
     
     private let configuration: ClientConfiguration
+    public let bytesCachePublisher: PassthroughSubject<Int, Never> = .init()
     
     // MARK: - Initialization
     
@@ -35,6 +36,9 @@ final class ClientImpl: Client {
             }
             .map { $0.data }
             .flatMap { data -> AnyPublisher<T, NetworkError> in
+                
+                self.bytesCachePublisher.send(URLCache.shared.currentDiskUsage)
+                
                 if let emptyResponse = try? self.configuration.jsonDecoder.decode(EmptyResponse.self, from: data), emptyResponse.empty {
                     return Fail(error: NetworkError.noSearchResults).eraseToAnyPublisher()
                 } else {

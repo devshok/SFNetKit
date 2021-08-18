@@ -1,17 +1,44 @@
 import Foundation
 import Combine
 
-public final class NetKit {
+public final class NetKit: ObservableObject {
     
     // MARK: - Client
     
     private let client: Client
     
+    // MARK: - Cache Publisher & Subscriber
+    
+    @Published
+    public var bytesCachePublisher: Int = .zero
+    
+    private var bytesCacheSubscriber: AnyCancellable?
+    
     // MARK: - Initialization
     
     public init(configuration: ClientConfiguration) {
         self.client = ClientImpl(configuration: configuration)
+        self.listenEvents()
     }
+    
+    deinit {
+        self.removeEvents()
+    }
+    
+    // MARK: - Helpers
+    
+    private func listenEvents() {
+        bytesCacheSubscriber = client.bytesCachePublisher
+            .assign(to: \.bytesCachePublisher, on: self)
+        bytesCachePublisher = URLCache.shared.currentDiskUsage
+    }
+    
+    private func removeEvents() {
+        bytesCacheSubscriber?.cancel()
+        bytesCacheSubscriber = nil
+    }
+    
+    // MARK: - Default Instance
     
     public static var `default`: Self {
         return .init(configuration: defaultConfiguration)
